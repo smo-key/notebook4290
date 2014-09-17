@@ -19,7 +19,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
     } else {
       move_uploaded_file($_FILES["file"]["tmp_name"],
       "images/" . $_FILES["file"]["name"]);
-      echo "Upload Sucessful! Paste the below code into your blog entry: <br>";
+      echo "Upload Sucessful! Paste the below code into your blog entry: PLACEHOLDER!!!!!!!!!!!!!!!!!!!!!!! <br>";
       echo '<a href="' , 'http://ehsandev.com/notebook/' , 'images/' , $_FILES["file"]["name"] , '">',
       'http://ehsandev.com/notebook/' , 'images/' , $_FILES["file"]["name"] , '</a>';
     }
