@@ -20,7 +20,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
       move_uploaded_file($_FILES["file"]["tmp_name"],
       "img/" . $_FILES["file"]["name"]);
       echo "Upload Sucessful! Paste the below code into your blog entry: <br>";
-      echo '<p>[' , $_FILES["file"]["name"], '][http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , ']</p>';
+      echo '<p><b>![' , $_FILES["file"]["name"], '](http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , ')</b></p>';
       $name = $_FILES["file"]["name"];
 	  $result = `sudo sh copyimages.sh $name`;
     }
