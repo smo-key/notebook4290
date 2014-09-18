@@ -1,4 +1,5 @@
 name: Notebook4290
+title: FTC Team 4290 Notebook
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 baseurl: /notebook
