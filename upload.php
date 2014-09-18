@@ -23,7 +23,6 @@ if ((($_FILES["file"]["type"] == "image/gif")
       echo '<a href="' , 'http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , '">',
       'http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , '</a>';
       $result = shell_exec('sudo sh copyimages.sh');
-      echo $result;
     }
   }
 } else {
