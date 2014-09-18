@@ -22,6 +22,8 @@ if ((($_FILES["file"]["type"] == "image/gif")
       echo "Upload Sucessful! Paste the below code into your blog entry: PLACEHOLDER!!!!!!!!!!!!!!!!!!!!!!! <br>";
       echo '<a href="' , 'http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , '">',
       'http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , '</a>';
+      $result = shell_exec('sh copyimages.sh');
+      echo $result;
     }
   }
 } else {
