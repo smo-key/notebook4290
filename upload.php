@@ -21,7 +21,8 @@ if ((($_FILES["file"]["type"] == "image/gif")
       "img/" . $_FILES["file"]["name"]);
       echo "Upload Sucessful! Paste the below code into your blog entry: <br>";
       echo '<p>[' , $_FILES["file"]["name"], '][http://ehsandev.com/notebook/' , 'img/' , $_FILES["file"]["name"] , ']</p>';
-      $result = shell_exec("sudo sh copyimages.sh $_FILES["file"]["name"]");
+      $name = $_FILES["file"]["name"];
+	  $result = `sudo sh copyimages.sh $name`;
     }
   }
 } else {
