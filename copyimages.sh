@@ -5,7 +5,7 @@ cd $PUBLIC_WWW
 cp -r img/ $GIT_REPO
 cd $GIT_REPO
 git add --all
-git commit -m "[Script] Added images"
+git commit -m "[Image Uploader] Added $0"
 git push origin master
 echo Copied Images!
 exit
