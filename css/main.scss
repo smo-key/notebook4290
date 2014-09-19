@@ -3,32 +3,37 @@
 ---
 @charset "utf-8";
 
+// Import font partial
+@import "fonts";
 
+/// VARIABLES ///
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+//fonts
+$base-font-family: "helvetica neue";
 $base-font-size:   16px;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+//spacing
 $spacing-unit:     30px;
 
+//colors
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+
+$lasa-purple: 	   #9A01CD;
+$lasa-purpledark:   #85449A;
+$lasa-gray:		   #CCCCCC;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+//responsive
 $on-palm:          600px;
 $on-laptop:        800px;
-
-// LASA Colors
-$col-purple: 	   #9A01CD;
-$col-purpledark:    #85449A;
-$col-gray:		   #CCCCCC;
-
 
 
 // Using media queries with like this:
@@ -43,8 +48,6 @@ $col-gray:		   #CCCCCC;
         @content;
     }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

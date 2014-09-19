@@ -3,3 +3,4 @@ title: FTC Team 4290 Notebook
 markdown: redcarpet
 highlighter: pygments
 baseurl: /notebook
+lsi: false
