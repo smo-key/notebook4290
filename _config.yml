@@ -1,6 +1,7 @@
 name: Notebook4290
 title: FTC Team 4290 Notebook
 address: http://ehsandev.com/notebook/
+copyright: Copyright &#169; LASA Robotics
 
 markdown: redcarpet
 highlighter: pygments
