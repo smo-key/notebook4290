@@ -2,15 +2,15 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 3px solid $lasa-white;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    background-color: $lasa-purple;
 }
 
-.site-title {
+/*.site-title {
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
@@ -19,8 +19,20 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        
     }
+}*/
+
+.lasa-image {
+    top: 10px;
+    height: 48px;
+    margin-bottom: 18px;
+    text-align: center;
+    position: relative;
+    background-image: url("../img/site/LASAlogo_White.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .site-nav {
@@ -46,11 +58,11 @@
         top: 9px;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        border: 1px solid $lasa-grey-light;
         border-radius: 5px;
         text-align: right;
 
-        .menu-icon {
+        /*.menu-icon {
             display: block;
             float: right;
             width: 36px;
@@ -67,7 +79,7 @@
                     fill: $grey-color-dark;
                 }
             }
-        }
+        }*/
 
         .trigger {
             clear: both;
@@ -92,7 +104,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $lasa-grey-light;
     padding: $spacing-unit 0;
 }
 
